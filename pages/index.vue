@@ -1,5 +1,5 @@
 <template>
-  <v-layout row wrap justify-center align-center>
+  <v-layout wrap justify-center align-center>
     <no-ssr>
       <vue-particles
         :clickEffect="false"
@@ -8,7 +8,7 @@
         color="#fff"
       />
     </no-ssr>
-    <v-flex xs8>
+    <v-flex xs11 sm8>
       <v-card>
         <v-card-title>Garrett Blackmon</v-card-title>
         <v-card-subtitle>Full Stack Developer</v-card-subtitle>
