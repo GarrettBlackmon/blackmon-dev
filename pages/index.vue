@@ -1,11 +1,13 @@
 <template>
   <v-layout row wrap justify-center align-center>
-    <vue-particles
-      :clickEffect="false"
-      :hoverEffect="false"
-      :moveSpeed="2"
-      color="#fff"
-    />
+    <no-ssr>
+      <vue-particles
+        :clickEffect="false"
+        :hoverEffect="false"
+        :moveSpeed="2"
+        color="#fff"
+      />
+    </no-ssr>
     <v-flex xs8>
       <v-card>
         <v-card-title>Garrett Blackmon</v-card-title>
