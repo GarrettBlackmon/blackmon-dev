@@ -23,16 +23,18 @@
         class="hidden-md-and-up"
         @click.stop="drawer = !drawer"
       />
+      <v-btn text :to="'/'">
+        <v-icon>mdi-home</v-icon>
+      </v-btn>
       <v-spacer></v-spacer>
       <v-toolbar-items
         class="hidden-sm-and-down"
         v-for="(item, i) in items"
         :key="i"
-        :to="item.to"
         router
         exact
       >
-        <v-btn text class="mx-5">{{ item.title }}</v-btn>
+        <v-btn :to="item.to" text class="mx-5">{{ item.title }}</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
       <v-btn fab small text @click.stop="goDark = !goDark">
