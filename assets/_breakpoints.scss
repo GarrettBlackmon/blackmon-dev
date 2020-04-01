@@ -1,0 +1,44 @@
+// Small tablets and large smartphones
+$screen-xs: 600px;
+// Small tablets
+$screen-sm: 960px;
+// Tablets and small desktops
+$screen-md: 1264px;
+// Large tablets and desktops
+$screen-lg: 1904px;
+
+// True if viewport < 600px
+@mixin xs {
+  @media (max-width: #{$screen-xs}) {
+    @content;
+  }
+}
+// True if viewport < 960px
+@mixin sm {
+  @media (max-width: #{$screen-sm}) {
+    @content;
+  }
+}
+// True if viewport < 1264px
+@mixin md {
+  @media (max-width: #{$screen-md}) {
+    @content;
+  }
+}
+@mixin md-and-up {
+  @media (min-width: #{$screen-sm}) {
+    @content;
+  }
+}
+// True if viewport < 1904px
+@mixin lg {
+  @media (max-width: #{$screen-lg}) {
+    @content;
+  }
+}
+// True if viewport > 1904px
+@mixin xl {
+  @media (min-width: #{$screen-lg}) {
+    @content;
+  }
+}

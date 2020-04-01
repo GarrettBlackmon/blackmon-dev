@@ -56,6 +56,7 @@ h1 {
 }
 h3 {
   color: grey;
+  font-weight: 400;
 }
 .headshot-container {
   width: 310px;

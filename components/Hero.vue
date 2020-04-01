@@ -37,20 +37,29 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .Hero-top {
   position: relative;
   width: 100%;
   height: 60vh;
+  @include xs {
+    height: 40vh;
+  }
 }
 
 #particles-js {
   height: 60vh;
+  @include xs {
+    height: 40vh;
+  }
 }
 .name {
   font-size: 6vw !important;
   font-family: 'Roboto';
   font-weight: 300;
+  @include xs {
+    font-size: 72px !important;
+  }
 }
 
 #content {

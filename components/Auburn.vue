@@ -16,10 +16,14 @@
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
 }
 .img-container {
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 15px 15px;
   box-shadow: 0px 34px 32px -4px rgba(0, 0, 0, 0.2);
 }
 h4 {
   color: grey;
+  font-weight: 300;
+}
+h1 {
+  font-weight: 400;
 }
 </style>
