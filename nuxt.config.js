@@ -36,7 +36,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~plugins/vue-particles', ssr: false }],
+  plugins: [
+    { src: '~plugins/vue-particles', ssr: false },
+    { src: '@/plugins/aos', ssr: false }
+  ],
   /*
    ** Nuxt.js dev-modules
    */
