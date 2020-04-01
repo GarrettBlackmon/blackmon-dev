@@ -1,5 +1,5 @@
 <template>
-  <v-card hover :href="link" class="mx-auto" max-width="400">
+  <v-card hover :href="link" class="mx-auto" max-width="400" width="100%">
     <v-img
       class="white--text align-end"
       height="200px"
