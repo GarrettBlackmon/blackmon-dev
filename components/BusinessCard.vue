@@ -1,10 +1,10 @@
 <template>
   <v-container id="BusinessCard" fluid>
     <v-layout fluid justify-center wrap>
-      <v-flex xs12 sm10 md8 lg6>
+      <v-flex xs12 sm10 md8 lg5>
         <v-card raised class="info-card pa-5">
           <v-layout fluid wrap>
-            <v-flex xs12 md6 order-xs2 text-sm-center text-md-left>
+            <v-flex xs12 md8 order-xs2 text-sm-center text-md-left>
               <h1>Garrett Blackmon</h1>
               <h3>Full Stack Developer</h3>
               <br />
@@ -34,7 +34,7 @@
                 </a>
               </p>
             </v-flex>
-            <v-flex xs12 md6 order-md2>
+            <v-flex xs12 md4 order-md2>
               <div class="headshot-container text-xs-center">
                 <img
                   class="headshot"
@@ -59,8 +59,10 @@ h3 {
   font-weight: 400;
 }
 .headshot-container {
-  width: 310px;
-  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .headshot {
   width: 100%;

@@ -15,7 +15,7 @@
         image="yc-app.png"
         title="Yellow Card Android App"
         subtitle="Android port of the Yellow Card Web App"
-        content="Android app for Yellow Card transpiled for compatibility down to Android 5.0"
+        content="Android app for Yellow Card transpiled for compatibility down to Android 4.4"
         light
       ></PortfolioItem>
     </v-layout>
