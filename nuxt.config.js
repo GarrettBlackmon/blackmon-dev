@@ -20,7 +20,12 @@ export default {
     link: [
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Montserrat&display=swap"'
+        href: 'https://fonts.googleapis.com/css?family=Montserrat&display=swap'
+      },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css'
       },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
@@ -67,6 +72,9 @@ export default {
    ** https://github.com/nuxt-community/vuetify-module
    */
   vuetify: {
+    options: {
+      customProperties: true
+    },
     customVariables: ['~/assets/variables.scss'],
     theme: {
       dark: false,

@@ -1,6 +1,6 @@
 <template>
   <v-app :dark="setTheme">
-    <v-navigation-drawer v-model="drawer" fixed app>
+    <v-navigation-drawer v-model="drawer" fixed app disable-resize-watcher>
       <v-list>
         <v-list-item href="/resume.pdf">
           <v-list-item-action>

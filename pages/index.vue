@@ -10,7 +10,8 @@
     <br />
     <br />
     <br />
-    <Auburn data-aos="fade-up"></Auburn>
+    <!-- <Auburn data-aos="fade-up"></Auburn> -->
+    <Timeline></Timeline>
 
     <div style="height:1200px;"></div>
   </v-layout>
@@ -21,8 +22,9 @@ import Hero from '@/components/Hero'
 import BusinessCard from '@/components/BusinessCard'
 import About from '@/components/About'
 import Auburn from '@/components/Auburn'
+import Timeline from '@/components/Timeline'
 export default {
-  components: { Hero, BusinessCard, About, Auburn }
+  components: { Hero, BusinessCard, About, Auburn, Timeline }
 }
 </script>
 
