@@ -71,6 +71,9 @@ export default {
   margin-right: auto;
   width: 100%;
   text-align: center;
+  @include xs {
+    top: 10%;
+  }
 }
 
 .animated {
