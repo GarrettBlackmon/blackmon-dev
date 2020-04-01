@@ -4,7 +4,7 @@
       <v-flex xs12 sm10 md8 lg6>
         <v-card raised class="info-card pa-5">
           <v-layout fluid wrap>
-            <v-flex xs12 md6 order-xs2>
+            <v-flex xs12 md6 order-xs2 text-sm-center text-md-left>
               <h1>Garrett Blackmon</h1>
               <h3>Full Stack Developer</h3>
               <br />

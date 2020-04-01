@@ -2,13 +2,7 @@
   <v-app :dark="setTheme">
     <v-navigation-drawer v-model="drawer" fixed app>
       <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
+        <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router exact>
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
@@ -19,30 +13,19 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar fixed app>
-      <v-app-bar-nav-icon
-        class="hidden-md-and-up"
-        @click.stop="drawer = !drawer"
-      />
+      <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawer = !drawer" />
       <v-btn text :to="'/'">
         <v-icon>mdi-home</v-icon>
       </v-btn>
       <v-spacer></v-spacer>
-      <v-toolbar-items
-        class="hidden-sm-and-down"
-        v-for="(item, i) in items"
-        :key="i"
-        router
-        exact
-      >
+      <v-toolbar-items class="hidden-sm-and-down" v-for="(item, i) in items" :key="i" router exact>
         <v-btn :to="item.to" text class="mx-5">{{ item.title }}</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
       <v-btn fab small text @click.stop="goDark = !goDark">
         <v-icon>mdi-moon-waxing-crescent</v-icon>
       </v-btn>
-      <v-snackbar right vertical v-model="snackbar" :timeout="2000">
-        This website supports Dark Mode!
-      </v-snackbar>
+      <v-snackbar right vertical v-model="snackbar" :timeout="2000">This website supports Dark Mode!</v-snackbar>
     </v-app-bar>
     <v-content>
       <v-container fluid pa-0 ma-0>
@@ -110,5 +93,25 @@ export default {
 }
 .v-snack .v-snack--active .v-snack--bottom .v-snack--right .v-snack--vertical {
   margin-top: 20px !important;
+}
+
+/* Custom scroll */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 </style>
