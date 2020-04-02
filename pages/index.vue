@@ -14,8 +14,10 @@
     <client-only>
       <Timeline></Timeline>
     </client-only>
-
-    <div style="height:1200px;"></div>
+    <br />
+    <br />
+    <br />
+    <Interests></Interests>
   </v-layout>
 </template>
 
@@ -25,8 +27,9 @@ import BusinessCard from '@/components/BusinessCard'
 import About from '@/components/About'
 import Auburn from '@/components/Auburn'
 import Timeline from '@/components/Timeline'
+import Interests from '@/components/Interests'
 export default {
-  components: { Hero, BusinessCard, About, Auburn, Timeline }
+  components: { Hero, BusinessCard, About, Auburn, Timeline, Interests }
 }
 </script>
 
