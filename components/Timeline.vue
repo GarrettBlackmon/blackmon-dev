@@ -1,9 +1,10 @@
 <template>
   <v-container id="timeline">
-    <v-timeline align-top :dense="$device.isMobile">
+    {{ $device.isMobile }}
+    <v-timeline align-top>
       <!-- 2010 -->
       <div data-aos="slide-left">
-        <v-timeline-item large color="purple" fill-dot>
+        <v-timeline-item large color="purple" fill-dot right>
           <template v-slot:icon>
             <i class="devicon-visualstudio-plain"></i>
           </template>
@@ -21,7 +22,7 @@
       </div>
       <!-- 2012 -->
       <div :data-aos="$device.isMobile ? 'slide-left' : 'slide-right'">
-        <v-timeline-item large color="#787CB5" fill-dot>
+        <v-timeline-item large color="#787CB5" fill-dot left>
           <template v-slot:icon>
             <i class="devicon-php-plain"></i>
           </template>
@@ -42,7 +43,7 @@
       </div>
       <!-- 2014 -->
       <div data-aos="slide-left">
-        <v-timeline-item large color="#F29111" fill-dot>
+        <v-timeline-item large color="#F29111" fill-dot right>
           <template v-slot:icon>
             <i class="devicon-mysql-plain"></i>
           </template>
@@ -62,7 +63,7 @@
       </div>
       <!-- 2016 -->
       <div :data-aos="$device.isMobile ? 'slide-left' : 'slide-right'">
-        <v-timeline-item large color="#007396" fill-dot>
+        <v-timeline-item large color="#007396" fill-dot left>
           <template v-slot:icon>
             <i class="devicon-java-plain"></i>
           </template>
@@ -82,7 +83,7 @@
       </div>
       <!-- 2018 -->
       <div data-aos="slide-left">
-        <v-timeline-item large color="#68A063" fill-dot>
+        <v-timeline-item large color="#68A063" fill-dot right>
           <template v-slot:icon>
             <i class="devicon-nodejs-plain"></i>
           </template>
@@ -103,7 +104,7 @@
       </div>
       <!-- 2019 -->
       <div :data-aos="$device.isMobile ? 'slide-left' : 'slide-right'">
-        <v-timeline-item large color="#42b883" fill-dot>
+        <v-timeline-item large color="#42b883" fill-dot left>
           <template v-slot:icon>
             <i class="devicon-vuejs-plain"></i>
           </template>
