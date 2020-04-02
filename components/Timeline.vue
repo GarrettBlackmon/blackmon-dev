@@ -1,7 +1,6 @@
 <template>
-  <v-container id="timeline">
-    {{ $device.isMobile }}
-    <v-timeline align-top>
+  <v-container id="timeline" pl-1>
+    <v-timeline align-top :dense="$device.isMobile">
       <!-- 2010 -->
       <div data-aos="slide-left">
         <v-timeline-item large color="purple" fill-dot right>
@@ -22,7 +21,12 @@
       </div>
       <!-- 2012 -->
       <div :data-aos="$device.isMobile ? 'slide-left' : 'slide-right'">
-        <v-timeline-item large color="#787CB5" fill-dot left>
+        <v-timeline-item
+          large
+          color="#787CB5"
+          fill-dot
+          :left="$device.isDesktop"
+        >
           <template v-slot:icon>
             <i class="devicon-php-plain"></i>
           </template>
@@ -63,7 +67,12 @@
       </div>
       <!-- 2016 -->
       <div :data-aos="$device.isMobile ? 'slide-left' : 'slide-right'">
-        <v-timeline-item large color="#007396" fill-dot left>
+        <v-timeline-item
+          large
+          color="#007396"
+          fill-dot
+          :left="$device.isDesktop"
+        >
           <template v-slot:icon>
             <i class="devicon-java-plain"></i>
           </template>
@@ -104,7 +113,12 @@
       </div>
       <!-- 2019 -->
       <div :data-aos="$device.isMobile ? 'slide-left' : 'slide-right'">
-        <v-timeline-item large color="#42b883" fill-dot left>
+        <v-timeline-item
+          large
+          color="#42b883"
+          fill-dot
+          :left="$device.isDesktop"
+        >
           <template v-slot:icon>
             <i class="devicon-vuejs-plain"></i>
           </template>
