@@ -11,7 +11,9 @@
     <br />
     <br />
     <!-- <Auburn data-aos="fade-up"></Auburn> -->
-    <Timeline></Timeline>
+    <client-only>
+      <Timeline></Timeline>
+    </client-only>
 
     <div style="height:1200px;"></div>
   </v-layout>
