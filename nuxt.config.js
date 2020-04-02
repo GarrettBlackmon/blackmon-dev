@@ -14,8 +14,25 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        content:
+          "Hi, my name is Garrett and this is my personal website. I'm a software developer based in Birmingham, AL."
+      },
+      { name: 'image', content: 'https://blackmon.dev/icon.png' },
+
+      {
+        hid: 'og:title',
+        name: 'og:title',
+        content: 'Garrett Blackmon - Full Stack Web Developer'
+      },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content:
+          "Hi, my name is Garrett and this is my personal website. I'm a software developer based in Birmingham, AL."
+      },
+      { name: 'og:image', content: 'https://blackmon.dev/icon.png' },
+      { name: 'og:url', content: 'https://blackmon.dev/' },
+      { name: 'og:type', content: 'website' }
     ],
     link: [
       {
