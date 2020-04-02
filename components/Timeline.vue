@@ -1,6 +1,6 @@
 <template>
-  <v-container>
-    <v-timeline align-top>
+  <v-container id="timeline">
+    <v-timeline align-top :dense="$device.isMobile">
       <!-- 2010 -->
       <v-timeline-item large color="purple" fill-dot>
         <template v-slot:icon>
@@ -25,7 +25,11 @@
         <template v-slot:opposite>
           <span>2012</span>
         </template>
-        <v-card class="elevation-2" color="#787CB5" data-aos="slide-right">
+        <v-card
+          class="elevation-2"
+          color="#787CB5"
+          :data-aos="$device.isMobile ? 'slide-left' : 'slide-right'"
+        >
           <v-card-title class="headline">Reaction Gif DataBase</v-card-title>
           <v-card-text class="pt-4" :style="'background: ' + themePrimary"
             >After learning some basic HTML and CSS I created a gif hosting
@@ -62,7 +66,11 @@
         <template v-slot:opposite>
           <span>2016</span>
         </template>
-        <v-card class="elevation-2" color="#007396" data-aos="slide-right">
+        <v-card
+          class="elevation-2"
+          color="#007396"
+          :data-aos="$device.isMobile ? 'slide-left' : 'slide-right'"
+        >
           <v-card-title class="headline">Learning OOP</v-card-title>
           <v-card-text class="pt-4" :style="'background: ' + themePrimary"
             >Midway through my Computer Science curriculum at Auburn University
@@ -97,7 +105,11 @@
         <template v-slot:opposite>
           <span>2019</span>
         </template>
-        <v-card class="elevation-2" color="#42b883" data-aos="slide-right">
+        <v-card
+          class="elevation-2"
+          color="#42b883"
+          :data-aos="$device.isMobile ? 'slide-left' : 'slide-right'"
+        >
           <v-card-title class="headline">Yellow Card</v-card-title>
           <v-card-text class="pt-4" :style="'background: ' + themePrimary"
             >Before graduation I begain working for a Cryptocurrency exchange
@@ -123,6 +135,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#timeline {
+  overflow-x: hidden;
+}
 .devicon-visualstudio-plain,
 .devicon-php-plain,
 .devicon-mysql-plain,
