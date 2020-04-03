@@ -72,6 +72,9 @@
   position: relative;
   top: 1200px;
   left: 70%;
+  @include xs {
+    left: 40%;
+  }
 }
 
 #fish {
