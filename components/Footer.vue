@@ -2,7 +2,9 @@
   <div id="footer">
     <div id="wave-container">
       <div id="wave-top">
-        <div id="wave">
+        <div id="wave" :style="'background: ' + themePrimary">
+          <div id="before"></div>
+          <div id="after" :style="'background: ' + themePrimary"></div>
           <div id="fish-container">
             <div class="led-box">
               <div class="led-yellow"></div>
@@ -14,6 +16,16 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    themePrimary() {
+      return this.$vuetify.theme.dark ? '#121212' : '#FFFFFF'
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 #footer {
@@ -44,7 +56,7 @@
   background: #00a6ff;
 }
 
-#wave:before {
+#before {
   content: '';
   display: block;
   position: absolute;
@@ -56,7 +68,7 @@
   top: 20px;
 }
 
-#wave:after {
+#after {
   content: '';
   display: block;
   position: absolute;
