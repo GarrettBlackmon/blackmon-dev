@@ -10,14 +10,16 @@
               <br />
               <p>
                 <v-icon>mdi-email</v-icon>
-                <a href="mailto:someone@yoursite.com">garrett@blackmon.dev</a>
+                <a href="mailto:garrett@blackmon.dev">garrett@blackmon.dev</a>
               </p>
               <p>
                 <v-icon>mdi-phone</v-icon>
 
                 <a href="tel:+13347149838">+1 (334) 714-9838</a>
               </p>
-              <p><v-icon>mdi-map-marker</v-icon>Birmingham, AL 35022</p>
+              <p>
+                <v-icon>mdi-map-marker</v-icon>Birmingham, AL 35022
+              </p>
 
               <p class="socials ml-1">
                 <a href="https://github.com/GarrettBlackmon">
