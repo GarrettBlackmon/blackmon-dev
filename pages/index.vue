@@ -10,7 +10,6 @@
     <br />
     <br />
     <br />
-    <!-- <Auburn data-aos="fade-up"></Auburn> -->
     <client-only>
       <Timeline></Timeline>
     </client-only>
@@ -18,6 +17,10 @@
     <br />
     <br />
     <Interests></Interests>
+    <br />
+    <br />
+    <br />
+    <Footer></Footer>
   </v-layout>
 </template>
 
@@ -28,8 +31,9 @@ import About from '@/components/About'
 import Auburn from '@/components/Auburn'
 import Timeline from '@/components/Timeline'
 import Interests from '@/components/Interests'
+import Footer from '@/components/Footer'
 export default {
-  components: { Hero, BusinessCard, About, Auburn, Timeline, Interests }
+  components: { Hero, BusinessCard, About, Timeline, Interests, Footer }
 }
 </script>
 
